@@ -1,0 +1,12 @@
+A.只有一個共同實體連線，卻可以切割出不同區域網路，且不同 LAN 彼此間不互相干擾
+
+B.透過控制交換器有效分派出入區域網的封包到正確的出入埠
+
+C.1號
+
+D.伺服器:67號、UDP 用戶端:68號、UDP
+
+E.設定檔:/etc/dhcp/dhcpd.conf 租約檔:/var/lib/dhcpd/dhcpd.leases
+
+F.自動取得 IP: nmcli connection modify vlan200 ipv4.method auto 
+  取得固定 IP: 修改 /etc/dhcp/dhcpd.conf ，查詢到 client 的 MAC address 之後將它設為固定IP
